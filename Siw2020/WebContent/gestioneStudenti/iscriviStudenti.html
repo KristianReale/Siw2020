@@ -5,5 +5,82 @@
 <title>Insert title here</title>
 </head>
 <body>	
+
+	<form id="modulo1" method="post"
+		action="inviaDatiStudente">
+		<div>
+			<label for="matricola">Matricola</label>
+			<div >
+				<input  name="matricola" type="text"
+					value="Matricola" />
+			</div>
+		</div>
+		<div>
+			<label for="nome">Nome</label>
+			<div>
+				<input name="nome" type="text"
+					value="Nome" />
+			</div>
+		</div>
+		<div>
+			<label for="nome">cognome</label>
+			<div>
+				<input  name="cognome" type="text"
+					value="Cognome" />
+			</div>
+		</div>
+		<div>
+			<label class="control-label col-sm-2" for="dataNascita">Data
+				di nascita</label>
+			<div>
+				<input name="dataNascita" type="date"
+					value="Data Nascita" />
+			</div>
+		</div>
+		<div>
+			<label for="password">Password</label>
+			<div >
+				<input name="password" type="password" />
+			</div>
+		</div>
+		<div>
+			<label for="password2">Conferma
+				Password</label>
+			<div>
+				<input name="password2" type="password" />
+			</div>
+		</div>
+		<div>
+			<label for="dipartimento">Dipartimento</label>
+			<div>
+				<select id="dip" name="dipartimento">
+					<option>---</option>
+					<option value="MatInf">Matematica e Informatica</option>					
+				</select>
+			</div>
+		</div>
+		<div>
+			<label for="corsoDiLaurea">Corso
+				di Laurea</label>
+			<div>
+				<select id="cLaurea"name="corsoDiLaurea"
+					disabled=true>
+					<option>---</option>
+				</select>
+			</div>
+		</div>
+		<div>
+			<label for="scuola">Scuola di
+				Diploma</label>
+			<div>
+				<select class="form-control" name="scuola">
+					<option>---</option>					
+				</select>
+			</div>
+		</div>
+		<input type="submit" /> 
+		<input
+			 type="reset" />
+	</form>
 </body>
 </html>

@@ -10,11 +10,30 @@ p {
 }
 
 .intestazione{
-	text-align: center;
+	text-align: center;	
 }
 
-article+article {
-	position: relative;
-	left: 50%;
-	top: 0px;
+h3.intestazione{
+	text-align: right;	
 }
+
+
+
+
+article {
+	position: absolute;			
+	width: 50%;
+}
+
+article+article{
+	position: absolute;
+    left: 50%;  
+}
+
+
+
+
+
+
+
+
