@@ -4,77 +4,80 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
+
+<LINK rel="stylesheet" href="../css/common.css" type="text/css">
+
 <body>	
 
 	<form id="modulo1" method="post"
-		action="inviaDatiStudente">
+		action="inviaDatiStudente" class="moduloRegistrazione">
 		<div>
-			<label for="matricola">Matricola</label>
+			<label for="matricola" class="etichetta">Matricola</label>
 			<div >
-				<input  name="matricola" type="text"
+				<input class="campo" name="matricola" type="text"
 					value="Matricola" />
 			</div>
 		</div>
 		<div>
-			<label for="nome">Nome</label>
+			<label for="nome" class="etichetta">Nome</label>
 			<div>
-				<input name="nome" type="text"
+				<input  class="campo" name="nome" type="text"
 					value="Nome" />
 			</div>
 		</div>
 		<div>
-			<label for="nome">cognome</label>
+			<label for="nome" class="etichetta">cognome</label>
 			<div>
-				<input  name="cognome" type="text"
+				<input  class="campo"  name="cognome" type="text"
 					value="Cognome" />
 			</div>
 		</div>
 		<div>
-			<label class="control-label col-sm-2" for="dataNascita">Data
+			<label class="etichetta" for="dataNascita">Data
 				di nascita</label>
 			<div>
-				<input name="dataNascita" type="date"
+				<input  class="campo"  name="dataNascita" type="date"
 					value="Data Nascita" />
 			</div>
 		</div>
 		<div>
-			<label for="password">Password</label>
+			<label class="etichetta" for="password">Password</label>
 			<div >
-				<input name="password" type="password" />
+				<input  class="campo" name="password" type="password" />
 			</div>
 		</div>
 		<div>
-			<label for="password2">Conferma
+			<label class="etichetta" for="password2">Conferma
 				Password</label>
 			<div>
-				<input name="password2" type="password" />
+				<input  class="campo"  name="password2" type="password" />
 			</div>
 		</div>
 		<div>
-			<label for="dipartimento">Dipartimento</label>
+			<label  class="valore" class="etichetta" for="dipartimento">Dipartimento</label>
 			<div>
-				<select id="dip" name="dipartimento">
+				<select  class="campo"  id="dip" name="dipartimento">
 					<option>---</option>
 					<option value="MatInf">Matematica e Informatica</option>					
 				</select>
 			</div>
 		</div>
 		<div>
-			<label for="corsoDiLaurea">Corso
+			<label class="etichetta" for="corsoDiLaurea">Corso
 				di Laurea</label>
 			<div>
-				<select id="cLaurea"name="corsoDiLaurea"
+				<select  class="campo"  id="cLaurea"name="corsoDiLaurea"
 					disabled=true>
 					<option>---</option>
 				</select>
 			</div>
 		</div>
 		<div>
-			<label for="scuola">Scuola di
+			<label class="etichetta" for="scuola">Scuola di
 				Diploma</label>
 			<div>
-				<select class="form-control" name="scuola">
-					<option>---</option>					
+				<select  class="campo"  name="scuola">
+					<option class="valore">---</option>					
 				</select>
 			</div>
 		</div>

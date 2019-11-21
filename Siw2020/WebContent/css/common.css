@@ -1,0 +1,51 @@
+header {
+	text-align: center;
+}
+
+footer{	
+	text-align: right;	
+}
+
+
+table{
+	border: 1px solid blue;
+}
+
+th {
+	background-color: red;
+}
+
+td {
+	border: 2px solid black;
+}
+
+
+.moduloRegistrazione {
+	border: 2px solid black;
+	width: 30%;
+}
+
+.moduloRegistrazione .etichetta {	
+	/* position: relative; */	
+	position: absolute;	
+	margin-top: 20px; 
+    left: 10px;    
+}
+
+.moduloRegistrazione .valore {	
+	/* position: relative; */	
+	position: relative;	
+	left: 20%;	
+		       
+}
+
+.moduloRegistrazione .campo{
+	margin-top: 20px; 
+}
+
+
+
+
+
+
+
