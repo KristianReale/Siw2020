@@ -14,7 +14,7 @@ p {
 }
 
 h3.intestazione{
-	text-align: right;	
+	text-align: left;	
 }
 
 
@@ -28,6 +28,15 @@ article {
 article+article{
 	position: absolute;
     left: 50%;  
+}
+
+aside{
+	position: absolute;
+	left: 30%;	
+}
+aside+aside{
+	position: absolute;
+	left: 70%;	
 }
 
 
