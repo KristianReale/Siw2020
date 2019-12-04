@@ -3,14 +3,91 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+
+<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
 </head>
+
+
+
 <body>
-	<h1> Questa è la pagina di Calcolo ISEE</h1>
-	<script language="javascript">
-		/* alert("Benvenuti nel servizio di Calcolo ISEE"); */
-	</script>
-	
+
 	<script src="../js/isee.js"></script>
+	
+	<h1> Questa è la pagina di Calcolo ISEE</h1>
+
+	<table class="table">
+		<tr>
+			<th>Matricola</th>
+			<th>Nome</th>
+			<th>Cognome</th>
+			<th>Data Nascita</th>
+			<th>Calcola ISEE </th>
+		</tr>
+		<tr class="success">
+			<td>103123</td>
+			<td>Mario</td>
+			<td>Rossi</td>
+			<td><time>10/10/2010</time></td>
+			<td><input type="button" onclick="stud = new Studente('103123', 'Mario', 'Rossi', '1/7/2001'); carica(stud);" value="Calcola ISEE" /> </td>
+		</tr>
+		<tr class="active">
+			<td>103124</td>
+			<td>Francesco</td>
+			<td>Verdi</td>
+			<td><time>12/10/2010</time></td>
+			<td><input type="button" value="Calcola ISEE" /> </td>
+		</tr>
+		<tr class="success">
+			<td>103623</td>
+			<td>Giorgio</td>
+			<td>Bianchi</td>
+			<td><time>11/10/2010</time></td>
+			<td><input type="button" value="Calcola ISEE" /> </td>
+		</tr>
+	</table>
+	
+	<section id="mascheraCalcolo">
+		<div id="selStudente">
+			<h4>-- Nessuno studente selezionato -- </h4>
+		</div>
+		<label>
+			Numero dei componenti del nucleo:
+		</label>
+		<input id="numComponenti" type="text" />
+		
+		<div id="valori">
+		
+		</div>
+		
+		<div>
+			<label>ISR:</label>
+			<span id="ISR">0</span>
+		</div>
+		<div>
+			<label>ISP:</label><span id="ISP">0</span>
+		</div>
+		<div>
+			<label>ISE:</label>
+			<span id="ISE">0</span>
+		</div>
+		<div>
+			<label>Scala di Equivalenza:</label>
+			<span id="scalaEquivalenza">0</span>
+		</div>
+		<div>
+			<label>ISEE:</label>
+			<span id="ISEE">0</span>
+		</div>	
+		<div>
+			<input id="calcolaISEE" type="button" value="Calcola ISEE"
+					class="btn btn-success" />
+		</div>
+	</div>
+	
+	</section>
 	
 	
 	
