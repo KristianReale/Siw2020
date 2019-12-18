@@ -10,10 +10,20 @@
   	<servlet-name>PrendiStudenti</servlet-name>
   	<servlet-class>controller.DammiStudenti</servlet-class>
   </servlet>
+  
   <servlet-mapping>
   	<servlet-name>PrendiStudenti</servlet-name>
   	<url-pattern>/ottieniStudenti</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>IscrizioneStudente</servlet-name>
+  	<servlet-class>controller.IscriviStudente</servlet-class>
+  </servlet>
   
+  <servlet-mapping>
+  	<servlet-name>IscrizioneStudente</servlet-name>
+  	<url-pattern>/gestioneStudenti/inviaDatiStudente</url-pattern>
+  </servlet-mapping>  
 
 </web-app>
