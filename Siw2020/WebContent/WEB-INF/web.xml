@@ -7,13 +7,33 @@
   </welcome-file-list> --> 
   
   <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<servlet-class>controller.Login</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>home</servlet-name>
+  	<servlet-class>controller.Home</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>home</servlet-name>
+  	<url-pattern></url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
   	<servlet-name>PrendiStudenti</servlet-name>
   	<servlet-class>controller.DammiStudenti</servlet-class>
   </servlet>
   
   <servlet-mapping>
   	<servlet-name>PrendiStudenti</servlet-name>
-  	<url-pattern>/ottieniStudenti</url-pattern>
+  	<url-pattern>/gestioneStudenti/ottieniStudenti</url-pattern>
   </servlet-mapping>
 
   <servlet>

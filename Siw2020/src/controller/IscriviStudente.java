@@ -28,9 +28,9 @@ public class IscriviStudente extends HttpServlet{
 		
 		DBManager.getInstance().inserisciStudente(stud);
 		
-		req.getSession().setAttribute("studenteRegistrato", stud);
+		req.setAttribute("studenteRegistrato", stud);
 		
-		RequestDispatcher rd = req.getRequestDispatcher("/ottieniStudenti");
+		RequestDispatcher rd = req.getRequestDispatcher("ottieniStudenti");
 		rd.forward(req, resp);
 		
 		System.out.println(matricola + " "  + nome + " " + cognome);

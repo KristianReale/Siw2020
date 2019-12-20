@@ -5,6 +5,7 @@ import java.util.List;
 
 import model.Scuola;
 import model.Studente;
+import model.Utente;
 
 public class DBManager {
 	private static DBManager instance = null;
@@ -28,10 +29,35 @@ public class DBManager {
 		s1.setCodiceMeccanografico("RCI3453453445");
 		s1.setNome("Istituto Professionale");
 		
-		// TODO Auto-generated constructor stub
+		Studente st1 = new Studente();
+		st1.setMatricola("45456");
+		st1.setCognome("Bianchi");
+		st1.setNome("Mario");
+		studenti.add(st1);
+		
+		Studente st2 = new Studente();
+		st2.setMatricola("21156");
+		st2.setCognome("Rossi");
+		st2.setNome("Rocco");
+		studenti.add(st2);
+		
 	}
 	
 	public void inserisciStudente(Studente s) {
 		studenti.add(s);
+	}
+
+	public Utente login(String username, String password) {
+		if (username.equals("kristian") && password.equals("kristian")) {
+			Utente u = new Utente();
+			u.setUsername("kristian");
+			u.setPassword("kristian");
+			return u;
+		}
+		return null;
+	}
+
+	public List<Studente> dammiStudenti() {
+		return studenti;
 	}
 }
