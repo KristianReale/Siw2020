@@ -1,9 +1,13 @@
 package model;
 
+import java.util.List;
+
 public class Scuola {
 	Long id;
 	String nome;
 	String codiceMeccanografico;
+	List<Studente> studentiIscritti;
+	
 	public Long getId() {
 		return id;
 	}
@@ -21,6 +25,14 @@ public class Scuola {
 	}
 	public void setCodiceMeccanografico(String codiceMeccanografico) {
 		this.codiceMeccanografico = codiceMeccanografico;
+	}
+	
+	public List<Studente> getStudentiIscritti() {
+		return studentiIscritti;
+	}
+	
+	public void setStudentiIscritti(List<Studente> studentiIscritti) {
+		this.studentiIscritti = studentiIscritti;
 	}
 	
 	
