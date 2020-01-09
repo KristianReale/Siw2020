@@ -5,7 +5,8 @@ public class Studente {
 	private String cognome;
 	private String nome;
 	private String dataNascita;
-	private Scuola scuola;
+	private Scuola scuolaDiDiploma;
+	private CorsoDiLaurea corsoDiLaurea;
 	
 	public String getMatricola() {
 		return matricola;
@@ -31,11 +32,11 @@ public class Studente {
 		this.dataNascita = dataNascita;
 	}
 	
-	public Scuola getScuola() {
-		return scuola;
+	public Scuola getScuolaDiDiploma() {
+		return scuolaDiDiploma;
 	}
-	public void setScuola(Scuola scuola) {
-		this.scuola = scuola;
+	public void setScuolaDiDiploma(Scuola scuolaDiDiploma) {
+		this.scuolaDiDiploma = scuolaDiDiploma;
 	}
 	
 	public String getNome() {
@@ -44,5 +45,13 @@ public class Studente {
 	
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+	
+	public CorsoDiLaurea getCorsoDiLaurea() {
+		return corsoDiLaurea;
+	}
+	
+	public void setCorsoDiLaurea(CorsoDiLaurea corsoDiLaurea) {
+		this.corsoDiLaurea = corsoDiLaurea;
 	}
 }
