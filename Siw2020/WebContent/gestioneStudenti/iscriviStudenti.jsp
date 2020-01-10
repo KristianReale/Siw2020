@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -65,8 +68,11 @@
 				<label class="control-label col-sm-2" for="dipartimento">Dipartimento</label>
 				<div class="col-sm-5">
 					<select id="dip" class="form-control" name="dipartimento"
-						onchange="enableCorso()";>
-						<option>---</option>						
+						onchange="setCorsoDiLaurea()";>
+						<option>---</option>	
+						<c:forEach items="${dipartimenti}" var="dipartimento">
+							<option value="${dipartimento.id}">${dipartimento.nome}</option>
+						</c:forEach>						
 					</select>
 				</div>
 			</div>

@@ -13,6 +13,8 @@
 <script src="../js/jquery-3.2.1.min.js"></script>
 <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 
+<script src="../js/formFiller.js"></script>
+
 </head>
 <body>
 	<c:if test="${studenteRegistrato != null}">
@@ -32,6 +34,9 @@
 			<th>
 				Cognome
 			</th>
+			<th>
+				Scuola
+			</th>
 		</tr>
 		<c:set var = "cont" scope = "request" value ="${0}" />
 		<c:forEach items="${studenti}" var="studente">
@@ -50,6 +55,9 @@
 				</td>
 				<td>
 					${studente.cognome}
+				</td>
+				<td>
+					<input value="Scuola" type="button" onclick="stud = new Studente('${studente.matricola}', '${studente.nome}', '${studente.cognome}'); caricaDettagliScuola(stud);">
 				</td>
 			</tr>
 		</c:forEach>
@@ -76,5 +84,7 @@
 			</td>		
 		</tr>	 -->
 	</table>
+	Dettagli Scuola
+	<div id="dettagliScuola" />	
 </body>
 </html>

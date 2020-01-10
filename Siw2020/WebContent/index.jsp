@@ -78,7 +78,7 @@
 				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Studenti<span class="caret"></span></a>
 				<ul class="dropdown-menu">
 					<li><a class="dropdown-item" href="gestioneStudenti/ottieniStudenti">Elenco Studenti</a></li>			
-					<li><a class="dropdown-item" href="gestioneStudenti/iscriviStudenti.html">Iscrivi uno studente</a></li>				
+					<li><a class="dropdown-item" href="gestioneStudenti/iscriviStudenti">Iscrivi uno studente</a></li>				
 					<li><a class="dropdown-item" href="gestioneStudenti/isee.html">Calcola ISEE</a></li>				
 				</ul>
 			</li>

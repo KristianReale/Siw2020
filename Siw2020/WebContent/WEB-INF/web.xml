@@ -40,10 +40,35 @@
   	<servlet-name>IscrizioneStudente</servlet-name>
   	<servlet-class>controller.IscriviStudente</servlet-class>
   </servlet>
-  
   <servlet-mapping>
   	<servlet-name>IscrizioneStudente</servlet-name>
   	<url-pattern>/gestioneStudenti/inviaDatiStudente</url-pattern>
   </servlet-mapping>  
+    <servlet-mapping>
+  	<servlet-name>IscrizioneStudente</servlet-name>
+  	<url-pattern>/gestioneStudenti/iscriviStudenti</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+  	<servlet-name>iCorsiDiLaurea</servlet-name>
+  	<servlet-class>controller.CorsiDiLaurea</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>iCorsiDiLaurea</servlet-name>
+  	<url-pattern>/gestioneStudenti/dammiCorsiDiLaurea</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>DettagliScuola1</servlet-name>
+  	<servlet-class>controller.DettagliScuola</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>DettagliScuola1</servlet-name>
+  	<url-pattern>/gestioneStudenti/dettagliScuola</url-pattern>
+  </servlet-mapping>
+  
+  
 
 </web-app>
